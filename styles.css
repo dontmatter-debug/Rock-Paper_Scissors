@@ -33,7 +33,7 @@ color: var(--whitesmoke--);
 
 #rock, #paper, #scissors {
     border-radius: 45px;
-    border: 1px solid var(--blue--);
+    border: none;
 }
 
 .btn:hover{

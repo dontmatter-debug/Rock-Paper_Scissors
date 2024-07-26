@@ -33,8 +33,8 @@ let computerMove = moves[randomIndex];
 if(playerMove === 'rock'){
     if(computerMove === 'rock') {
         result = `Tie.`;
-        gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
-       stats.ties++;
+        gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
+        stats.ties++;
     } else if(computerMove === 'paper'){
         result = `You lose.`;
         gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
@@ -54,7 +54,7 @@ if(playerMove === 'rock'){
    stats.wins++;
     } else if(computerMove === 'paper'){
         result = `Tie.`;
-        gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
+        gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
         stats.ties++;
     }else{
         result = `You lose.`;
@@ -76,8 +76,8 @@ if(playerMove === 'rock'){
         stats.wins++;
     }else{
         result = `Tie.`;
-        gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
-       stats.ties++;
+        gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
+        stats.ties++;
 }
 }
 
