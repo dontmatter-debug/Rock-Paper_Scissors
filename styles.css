@@ -1,0 +1,62 @@
+*{
+    font-family: Montserrat;
+
+}
+
+:root{
+    --blue--: rgb(0, 162, 255);
+    --yellow--: rgb(255, 213, 0);
+    --whitesmoke--: color: rgb(232, 232, 232);;
+}
+
+body{
+    background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+    color: whitesmoke;
+}
+
+.container h2, .container h1{
+color: var(--whitesmoke--);
+}
+
+.btn{
+    cursor: pointer;
+    border: 1px solid var(--yellow--);
+    background-color: #1f1f1f;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 6px;
+    transition: all 0.15s;
+}
+
+#rock, #paper, #scissors {
+    border-radius: 45px;
+    border: 1px solid var(--blue--);
+}
+
+.btn:hover{
+opacity: 0.8;
+}
+
+span{
+color: var(--blue--);
+}
+
+.ties{
+color: var(--yellow--);
+}
+
+.losses{
+    color: var(--whitesmoke--);
+}
+
+.game-icon{
+    height: 50px;
+}
+
+
+.result-icon{
+    height: 70px;
+}

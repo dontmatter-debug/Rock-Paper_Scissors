@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p>Rock Paper Scissors</p>
+        <br>
+        <button class="btn" id="rock">
+            <img src="rock-emoji.png" class="game-icon" alt="Rock">
+        </button>
+        <button class="btn" id="paper">
+            <img src="paper-emoji.png" class="game-icon" alt="Paper">
+        </button>
+        <button class="btn" id="scissors">
+            <img src="scissors-emoji.png" class="game-icon" alt="Scissors">
+        </button>
+        <br>
+        <h2 id="player-vs-computer"></h2>
+        <h1 class="win-or-lose">
+            
+        </h1>
+        <div class="score">
+            <span class="wins">Wins</span>: <strong id="winz"></strong>,
+            <span class="losses">Losses</span>: <strong id="losts"></strong>,
+            <span class="ties">Ties</span>: <strong id="tiedz"></strong>.
+        </div>
+        <button style="margin-top: 20px;
+        " class="btn" id="reset">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
