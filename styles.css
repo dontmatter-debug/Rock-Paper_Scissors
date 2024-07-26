@@ -3,6 +3,12 @@
 
 }
 
+
+html, body {
+    touch-action: manipulation;
+    -ms-touch-action: manipulation; /* For IE/Edge */
+}
+
 :root{
     --blue--: rgb(0, 162, 255);
     --yellow--: rgb(255, 213, 0);
@@ -20,7 +26,7 @@ color: var(--whitesmoke--);
 
 .btn{
     cursor: pointer;
-    border: 1px solid var(--yellow--);
+    border: 1px solid var(--blue--);
     background-color: #1f1f1f;
     color: white;
     font-weight: 600;
@@ -29,15 +35,16 @@ color: var(--whitesmoke--);
     border-radius: 5px;
     margin-right: 6px;
     transition: all 0.15s;
-}
-
-#rock, #paper, #scissors {
-    border-radius: 45px;
-    border: none;
+    margin-bottom: 20px;
 }
 
 .btn:hover{
 opacity: 0.8;
+}
+
+#reset{
+    margin-top: 30px;
+    border: 1px solid var(--yellow--);
 }
 
 span{
@@ -59,4 +66,8 @@ color: var(--yellow--);
 
 .result-icon{
     height: 70px;
+}
+
+#score{
+    margin-bottom: 20px;
 }

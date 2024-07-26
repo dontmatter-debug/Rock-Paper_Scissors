@@ -32,7 +32,7 @@ let computerMove = moves[randomIndex];
 
 if(playerMove === 'rock'){
     if(computerMove === 'rock') {
-        result = `Tie.`;
+        result = `Draw.`;
         gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
         stats.ties++;
     } else if(computerMove === 'paper'){
@@ -53,7 +53,7 @@ if(playerMove === 'rock'){
     gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
    stats.wins++;
     } else if(computerMove === 'paper'){
-        result = `Tie.`;
+        result = `Draw.`;
         gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
         stats.ties++;
     }else{
@@ -75,7 +75,7 @@ if(playerMove === 'rock'){
         gameRez = `You <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}"> - <img class="result-icon" src="${computerMove}-emoji.png" alt="${computerMove}"> Computer. `;
         stats.wins++;
     }else{
-        result = `Tie.`;
+        result = `Draw.`;
         gameRez = `Both chose <img class="result-icon" src="${playerMove}-emoji.png" alt="${playerMove}">.`
         stats.ties++;
 }
